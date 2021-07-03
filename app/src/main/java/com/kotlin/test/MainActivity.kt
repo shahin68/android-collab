@@ -1,4 +1,4 @@
-package com.shahin.test
+package com.kotlin.test
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
