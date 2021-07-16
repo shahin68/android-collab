@@ -49,9 +49,6 @@ class Person: Machine(Wheel(1, "A")), PersonAction{
 }
 
 
-
-
-
 data class Wheel(var size: Int=2, var brand:String = "A")
 
 interface PersonAction {
