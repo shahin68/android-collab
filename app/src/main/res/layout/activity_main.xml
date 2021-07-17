@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="@drawable/background">
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/register_logo_70dp"
+        android:layout_height="@dimen/register_logo_70dp"
         android:layout_marginTop="200dp"
         app:srcCompat="@drawable/logo" />
 
@@ -20,12 +20,12 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:layout_marginTop="@dimen/generic_size_10dp"
         android:autofillHints="Email"
-        android:layout_marginTop="10dp"
-        android:ems="10"
         android:background="@drawable/custom_input"
+        android:ems="10"
         android:gravity="center_horizontal|center_vertical"
-        android:hint="@string/email_address"
+        android:hint="@string/register_txt_email_address"
         android:inputType="textEmailAddress"
         android:textAlignment="center" />
 
@@ -34,21 +34,66 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginVertical="10dp"
-        android:autofillHints="Password"
-        android:ems="10"
+        android:autofillHints="@string/register_pass_hint_pass"
         android:background="@drawable/custom_input"
+        android:ems="10"
         android:gravity="center_horizontal|center_vertical"
-        android:hint="@string/password"
+        android:hint="@string/register_txt_password"
         android:inputType="textPassword"
-        android:textAlignment="center"
-        />
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="@string/log_in"
-        app:backgroundTint="#3F51B5" />
+        android:text="@string/register_btn_log_in"
+        app:backgroundTint="@color/register_login_btn_background" />
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/register_logo_70dp"
+                android:layout_height="@dimen/register_logo_70dp"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:layout_width="@dimen/register_logo_70dp"
+                android:layout_height="@dimen/register_logo_70dp"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:layout_width="@dimen/register_logo_70dp"
+                android:layout_height="@dimen/register_logo_70dp"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:layout_width="@dimen/register_logo_70dp"
+                android:layout_height="@dimen/register_logo_70dp"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:layout_width="@dimen/register_logo_70dp"
+                android:layout_height="@dimen/register_logo_70dp"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:layout_width="@dimen/register_logo_70dp"
+                android:layout_height="@dimen/register_logo_70dp"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:layout_width="@dimen/register_logo_70dp"
+                android:layout_height="@dimen/register_logo_70dp"
+                app:srcCompat="@drawable/logo" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

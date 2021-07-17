@@ -39,8 +39,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun login(emailValue: String, passwordValue: String){
-        val messageSuccessful: String = "Login successfully"
-        val messageFailed: String = "Login Failed Check your Email or password "
+        val messageSuccessful: String = getString(R.string.register_msg_login_successful)
+        val messageFailed: String = getString(R.string.register_error_login_failed)
 
         if (validateEmail(emailAddress, emailValue) and (validatePassword(password, passwordValue))){
             Toast.makeText(applicationContext, messageSuccessful, Toast.LENGTH_SHORT).show()
