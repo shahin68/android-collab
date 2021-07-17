@@ -7,31 +7,17 @@ class Person1: Person2() {
         super.doSomething()
     }
 
-    override fun sad(value: Int): Boolean {
-        return super.sad(value)
-    }
 
-    override fun happy() {
-        super.happy()
-    }
 }
 
-open class Person2: Behavior {
-
+open class Person2 {
+    
     open fun doSomething(){
-        print("Hello")
+
     }
 
     fun doSomething1() {
-
-    }
-
-    override fun sad(value: Int): Boolean {
-        TODO("Not yet implemented")
-    }
-
-    override fun happy() {
-        TODO("Not yet implemented")
+        
     }
 }
 
